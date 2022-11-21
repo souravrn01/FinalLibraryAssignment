@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="showbook" *ngFor="let book of allBooks">
+        <img src="../../../assets/bookicon.png" alt="cover" width="100">
+        <div class="details">
+        <p>TITLE: {{book.title}}</p> 
+        <p>AUTHOR: {{book.author}}</p> 
+        <p>GENRE: {{book.jenre}}</p>
+        <p>LANGUAGE: {{book.language}} </p>
+        </div>
+        <div class="right">
+            <button class="button" id="edit" (click)="editBook(book._id)">EDIT</button><br>
+            <button class="button" id="delete" (click)="deleteBook(book._id)">DELETE</button>
+        </div>
+    </div>
+</div> 

@@ -1,0 +1,39 @@
+label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  form {
+    border-radius: 10px;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: rgb(25, 44, 61);
+    color:bisque;
+    padding: 20px;
+    
+  }
+
+  input{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: rgb(250, 237, 221);
+    color: black;
+    font-weight: 600;
+    
+  }
+
+  button {
+    display: block;
+    width: 60%;
+    margin: 1em auto; 
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #c8c175;
+    min-width: 300px;
+    font-weight: 600;
+  }
+  button:hover{
+    background-color: #fff79b;
+  }
+

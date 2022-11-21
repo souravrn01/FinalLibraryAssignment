@@ -1,0 +1,45 @@
+.showbook{
+    width: 85%;
+    padding:20px;
+    background-color: rgb(4, 51, 59);
+    margin: 20px auto 0px;
+    border-radius: 20px;
+    color:beige;
+}
+
+.showbook img{
+    float: left;
+    margin-right: 20px;
+    height:160px;
+}
+
+.details{
+    display:inline-block
+}
+
+.showbook .right{
+    float:right;
+    margin-top:25px;
+    padding:10px
+}
+
+.right .button{
+    width: 100px;
+    margin-top: 10px;
+    padding:5px;
+    border-radius: 10px;
+    color: white;
+    transition: transform .2s;
+}
+
+#edit{
+    background-color: green;
+}
+
+#delete{
+    background-color: red;
+}
+
+ .button:hover{
+    transform: scale(1.05);
+}

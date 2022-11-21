@@ -1,0 +1,21 @@
+.container{
+    min-width: 300px;
+    max-width: 600px;
+    padding-top:200px;
+}
+form{
+    background-color: rgb(147, 249, 124);
+    padding:20px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+.body{
+    background-image: url(../../../assets/808254.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}

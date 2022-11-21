@@ -1,0 +1,10 @@
+<div class="container">
+    <form  [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+        <label for="title">TITLE: <input id="title" name="title" type="text" required formControlName="title"> </label>
+        <label for="author">AUTHOR: <input id="author" name="author" type="text" required formControlName="author"> </label>
+        <label for="jenre">GENRE: <input id="jenre" name="jenre" type="text" required formControlName="jenre"> </label>
+        <label for="language">LANGUAGE: <input id="language" name="language" type="text" required formControlName="language"> </label> 
+        <button type="submit">UPLOAD</button>
+    </form>
+</div>
+  

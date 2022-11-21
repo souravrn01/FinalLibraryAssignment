@@ -1,0 +1,41 @@
+.buttons{
+
+    display: inline-block;
+    padding:20px;
+    width:500px;
+    margin:40px 380px;
+    border-radius: 20px;
+    background-color: rgb(43, 42, 42);
+}
+
+.btn-outline-success, .btn-outline-warning{
+    display:block;
+    margin-left: 42%;
+}
+
+.btn-outline-warning{
+    margin-top: 30px;
+}
+
+
+ .buttons h4{
+   font-size: 20px;
+    text-align: center;
+    margin-top:20px;
+    color: azure;
+}
+
+.body{
+    background-color: beige;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 700;
+    padding-top: 200px;
+    color: rgb(124, 146, 77);
+    font-family:cursive
+
+}

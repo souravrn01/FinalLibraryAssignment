@@ -1,0 +1,23 @@
+<div class="body">
+  <div class="container">
+    <form #userSignup="ngForm" (ngSubmit)="validate()">
+        <div class="from-group">
+            <label for="name" class="form-label">User name</label>
+            <input type="name" [(ngModel)]="User.name" #name="ngModel" [class.is-invalid]="name.invalid && name.touched" class="form-control" id="name" name="name"  required>
+            <small class="text-danger" [class.d-none]="name.valid || name.touched"> enter name</small>
+          </div>
+        <div class="from-group">
+          <br><label for="email" class="form-label">Email address</label>
+          <input type="email" [(ngModel)]="User.email" [class.is-invalid]="email.invalid && email.touched" #email="ngModel" class="form-control" id="email" name="email" aria-describedby="emailHelp" required pattern="^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$">
+          <small class="text-danger" [class.d-none]="email.valid || email.touched"> enter valid email</small>
+        </div>
+        <div class="from-group">
+          <br><label for="password" class="form-label">Password</label>
+          <input type="text" [(ngModel)]="User.password" #password="ngModel" [class.is-invalid]="password.invalid && password.touched" class="form-control" id="password" name="password" required pattern="^[\d\w@]{8,20}$">
+          <small class="text-danger" [class.d-none]="password.valid || password.touched"> enter valid password</small>
+        </div>
+        <br><button type="submit" class="btn btn-primary" [disabled]="userSignup.form.invalid">Submit</button> &nbsp;&nbsp;
+        <button class="btn btn-primary" routerLink="/">Home</button>
+      </form>
+</div>  
+</div>

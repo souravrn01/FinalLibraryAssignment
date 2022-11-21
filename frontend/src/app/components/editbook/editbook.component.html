@@ -1,0 +1,10 @@
+<div class="container">
+    <form #editbook= "ngForm" (ngSubmit)="onSubmit(data._id)">
+        <label for="title">TITLE: <input id="title" name="title" type="text" required [(ngModel)]="editForm.title" #title = "ngModel" value="{{data.title}}"> </label>
+        <label for="author">AUTHOR: <input id="author" name="author" type="text" required [(ngModel)]="editForm.author" #author = "ngModel" value="{{data.author}}"> </label>
+        <label for="jenre">GENRE: <input id="jenre" name="jenre" type="text" required [(ngModel)]="editForm.jenre" #jenre = "ngModel" value="{{data.jenre}}"> </label>
+        <label for="language">LANGUAGE: <input id="language" name="language" type="text" required [(ngModel)]="editForm.language" #language = "ngModel" value="{{data.language}}"> </label> 
+        <button type="submit">EDIT</button>
+    </form>
+</div>
+ 
